@@ -1,0 +1,138 @@
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.form input,
+.form select {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #45a049;
+}
+
+.dashboard {
+  margin: 20px 0;
+  color: #444;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.card.income {
+  background-color: #e6f7e6;
+  color: #2e7d32;
+}
+
+.card.expense {
+  background-color: #ffe6e6;
+  color: #c62828;
+}
+
+.card.balance {
+  background-color: #e6f0ff;
+  color: #1565c0;
+}
+
+.view-toggle {
+  margin-top: 15px;
+}
+
+.view-toggle button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.view-toggle button.active {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.filters {
+  margin: 20px 0;
+}
+
+.filters input,
+.filters select {
+  margin: 0 5px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+/* ✅ ใช้ gradient ให้เข้ากับธีม */
+.card.income {
+  background: linear-gradient(135deg, #d4f6e6, #a8e6cf);
+  color: #2e7d32;
+}
