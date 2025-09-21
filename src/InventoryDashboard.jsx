@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./expense.css";
 
-const API_BASE = "http://localhost:5000"; // Flask backend
+const API_BASE = "https://expense-tracker-backend-138z.onrender.com";
 
 function ExpenseTracker() {
   const [transactions, setTransactions] = useState([]);
@@ -20,11 +20,11 @@ function ExpenseTracker() {
     note: "",
   });
 
-  const [view, setView] = useState("all"); // all | income | expense
+  const [view, setView] = useState("all");
   const [filter, setFilter] = useState({
     startDate: "",
     endDate: "",
-    sort: "latest", // latest | oldest | high | low
+    sort: "latest",
   });
 
   // โหลดข้อมูลจาก backend
